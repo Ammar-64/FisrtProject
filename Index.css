@@ -1,0 +1,355 @@
+.navbar-default {
+    background-color: #009cbb;
+    border-color: #009cbb;
+    width: 100%;
+    position: fixed;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    float: left;
+
+}
+.navbar-fixed-top {
+    min-height: 70px;
+    top: 0;
+    border-width: 0 0 1px;
+}
+.navbar-default .logo a {
+    height: 70px;
+    width: 70px;
+    margin-left: -60px;
+    text-align: center;
+    left: 50%;
+    background: url(https://i.ibb.co/QdJ5Cpr/myPic.jpg) center;
+    background-size: cover;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear;
+    border-radius: 50%;
+    position: fixed;
+}
+.title1 {
+    left: 30%;
+    margin-left: 0px;
+    text-align: center;
+    top: -18px;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Italianno', cursive;
+    font-size: 35px;
+    position: fixed;
+} 
+.title2 {
+    left: 52%;
+    margin-left: 0px;
+    text-align: center;
+    top: -18px;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Italianno', cursive;
+    font-size: 35px;
+    position: fixed;
+} 
+.about {
+    height: 350px;
+}
+#pic {
+    float: left;
+    width: 90%;
+    border-color: #005160;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 70px;
+}
+div.column1 {
+    float: left;
+    width: 60%;
+    background-color: rgba(76, 185, 207, 0.4);
+    margin: 20px;
+    border-radius: 5px;
+}
+div.column2 {
+  float: left;
+  width: 33.33%;
+}
+.name {
+    font-style: italic;
+}
+#about {
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+h2 {
+    font-family: 'Merienda', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #005160;
+    margin-top: 100px;
+}
+div.Experience {
+    margin-top: 20px;
+    text-align: center;
+}
+.tabs {
+    position: relative;
+    margin: 40px auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.content {
+    background: #fff;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    min-height: 400px;
+    overflow: hidden;
+    z-index: 5;
+    box-shadow: 0 -2px 3px -2px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.1);
+    border-radius: 0 3px 3px 3px;
+}
+
+.tabs input {
+    position: absolute;
+    z-index: 1000;
+    width: 80px;
+    height: 40px;
+    top: 0px;
+    opacity: 0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}
+.tabs input#tab-2{
+    left: 80px;
+}
+.tabs label {
+    background: #005160;
+    font-size: 15px;
+    line-height: 40px;
+    height: 40px;
+    position: relative;
+    padding: 0 20px;
+    float: left;
+    left: 0;
+    display: block;
+    width: 80px;
+    margin-bottom: 0;
+    color: #4cb9cf;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 2px 0 2px rgba(0,0,0,0.1), -2px 0 2px rgba(0,0,0,0.1);
+}
+
+.tabs label:after {
+    content: '';
+    background: #fff;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    display: block;
+}
+
+.tabs input:hover + label {
+    background: #009cbb;
+    color: #fff;
+}
+
+.tabs label:first-of-type {
+    z-index: 4;
+}
+
+.tab-label-2 {
+    z-index: 3;
+}
+
+
+.tabs input:checked + label {
+    background: #fff;
+    z-index: 6;
+    color: #4cb9cf;
+}
+
+.clear-shadow {
+    clear: both;
+}
+
+.content div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 40px;
+    z-index: 1;
+    opacity: 0;
+
+    -webkit-transition: opacity linear 0.1s;
+    -moz-transition: opacity linear 0.1s;
+    -o-transition: opacity linear 0.1s;
+    -ms-transition: opacity linear 0.1s;
+    transition: opacity linear 0.1s;
+}
+
+.tabs input.tab-selector-1:checked ~ .content .content-1,
+.tabs input.tab-selector-2:checked ~ .content .content-2,
+.tabs input.tab-selector-3:checked ~ .content .content-3,
+.tabs input.tab-selector-4:checked ~ .content .content-4,
+.tabs input.tab-selector-5:checked ~ .content .content-5,
+.tabs input.tab-selector-6:checked ~ .content .content-6{
+    z-index: 100;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+
+    -webkit-transition: opacity ease-out 0.2s 0.1s;
+    -moz-transition: opacity ease-out 0.2s 0.1s;
+    -o-transition: opacity ease-out 0.2s 0.1s;
+    -ms-transition: opacity ease-out 0.2s 0.1s;
+    transition: opacity ease-out 0.2s 0.1s;
+}
+.content div h2,
+.content div h3{
+    color: #005160;
+}
+
+
+
+.tabs .content table {
+    width: 100%;
+    text-align: center;
+}
+
+.tabs .content td {
+    height: 50px;
+    width: 50%;
+    background-color: rgba(76, 185, 207, 0.4);
+    border: 4px solid #fff;
+    padding: 8px 30px;
+}
+
+.tabs .content td.rtd {
+    background-color: #009cbb;
+    color: #fff;
+}
+
+.tabs .content td hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    border-top: 1px solid #fff;
+    text-align: center;
+    width: 50%;
+}
+div.Hobbies {
+    text-align: center;
+    font-style: bold;
+
+}
+div.Sports {
+  float: left;
+  width: 50%;
+  background-color: rgba(76, 185, 207, 0.4);
+  margin-bottom: 40px;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-style: bold;
+}
+div.Other {
+  float: left;
+  width: 50%;
+  background-color: rgba(76, 185, 207, 0.4);
+  margin-bottom: 40px;
+  font-family: sans-serif;    
+  font-size: 20px;
+  font-style: bold;
+}
+.contact-form {
+    max-width: 60%;
+    margin: 20px auto;
+}
+.contact-form fieldset{
+    border: none;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 30px;
+}
+.contact-form input[type="text"],
+.contact-form textarea,
+.contact-form select {
+    background: rgba(255,255,255,.1);
+    border: solid;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    color:#8a97a0;
+    margin-bottom: 30px;
+    border-color: rgba(76, 185, 207, 0.4)
+}
+#subject {
+    height: 200px;
+}
+.contact-form input[type="submit"] {
+    background: #006d81;
+    color: #fff;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 20px;
+}
+footer h2 {
+    margin-top: 40px;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 100px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  left: 50%;
+  margin-bottom: 20px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  margin: 5px;
+  margin-left: 40%;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  margin: 5px;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+  margin: 5px;
+}
